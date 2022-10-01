@@ -1,0 +1,50 @@
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model User {
+    id        String    @id @default(uuid())
+    name      String
+    email     String    @unique
+    github    String    @unique
+    stores    Store[]
+    createdAt DateTime  @default(now())
+    updatedAt DateTime  @updatedAt
+    deletedAt DateTime?
+}
+
+model Store {
+    id              String    @id @default(uuid())
+    name            String
+    type            StoreType
+    url             String
+    user            User      @relation(fields: [userId], references: [id])
+    userId          String
+    backups         Backup[]
+    backupFrequency Int       @default(1440)
+    createdAt       DateTime  @default(now())
+    updatedAt       DateTime  @updatedAt
+    deletedAt       DateTime?
+}
+
+enum StoreType {
+    REDIS
+    MONGODB
+    POSTGRESQL
+    MYSQL
+}
+
+model Backup {
+    id        String    @id @default(uuid())
+    url       String    @unique
+    store     Store     @relation(fields: [storeId], references: [id])
+    storeId   String
+    createdAt DateTime  @default(now())
+    updatedAt DateTime  @updatedAt
+    deletedAt DateTime?
+}

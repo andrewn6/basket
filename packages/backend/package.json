@@ -1,0 +1,20 @@
+{
+  "name": "@substore/backend",
+  "version": "1.0.0",
+  "description": "substore's backend",
+  "scripts": {
+    "generate": "prisma generate",
+    "migrate:dev": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "migrate:status": "prisma migrate status"
+  },
+  "keywords": [],
+  "author": "wyzlle",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "@prisma/client": "^4.4.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.4.0"
+  }
+}
