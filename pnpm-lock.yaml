@@ -1,0 +1,181 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      '@moonrepo/cli': ^0.15.0
+      rome: 0.9.2-next
+      typescript: 4.8.4
+    devDependencies:
+      '@moonrepo/cli': 0.15.0
+      rome: 0.9.2-next
+      typescript: 4.8.4
+
+packages:
+
+  /@moonrepo/cli/0.15.0:
+    resolution: {integrity: sha512-TTWgMmy8np71S57tX6TxcryTPho1Vm2lsbObtm+18gKEfbp/zSZu2DBOb2DXOS6kTUZcbSkvecet7xTx9pa8DQ==}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      detect-libc: 2.0.1
+    optionalDependencies:
+      '@moonrepo/core-linux-arm64-gnu': 0.15.0
+      '@moonrepo/core-linux-arm64-musl': 0.15.0
+      '@moonrepo/core-linux-x64-gnu': 0.15.0
+      '@moonrepo/core-linux-x64-musl': 0.15.0
+      '@moonrepo/core-macos-arm64': 0.15.0
+      '@moonrepo/core-macos-x64': 0.15.0
+      '@moonrepo/core-windows-x64-msvc': 0.15.0
+    dev: true
+
+  /@moonrepo/core-linux-arm64-gnu/0.15.0:
+    resolution: {integrity: sha512-ULDfZOVcyHD1GZHLQ+Fc1pqGq3LdxwmduBscEKzFpSGh8rtuhNWHANxWZ6fSXhAxpK10fUfqE+ZT2FddTZAQpg==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-linux-arm64-musl/0.15.0:
+    resolution: {integrity: sha512-A4c5g0Zknd/gIBK5ZhvTaL+IlEFYjizVlQggNpfdtJrXZKZtkN43e3RAFILmAcZiWDUkUS9oQGSxUWtNRB9kQA==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-linux-x64-gnu/0.15.0:
+    resolution: {integrity: sha512-8c1e/qoKX8keK+ghmM+fuE3IBNnLIl5khM8YQSs3Cr6fhBuHRsYpCVX7R3YdM/aiefzDZOUrF+BJ6RWiNX8aGQ==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-linux-x64-musl/0.15.0:
+    resolution: {integrity: sha512-0MIoFqPoKBlq7nB6S/99Lll55YoHyEpRd1jwXxRLAbDpGspEpjGtFxDH53oNVgtf5TphcCa9P5V7HTLMxuNZow==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-macos-arm64/0.15.0:
+    resolution: {integrity: sha512-wNBAgHQfVzdNtICB7PdL2Cgk7OCy045U9lzfhco+gk/Hjni+9gpTou5s2qm3hnwAtC7fsoJFbtdNV3f/Mm3g8A==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-macos-x64/0.15.0:
+    resolution: {integrity: sha512-bSXHokcgUo/QwaEpXBcQ4q3CN28SrkGtbRuM7hMPvcPULgcCuh9eIEP0gyHJ6QderDoUSirBP2dyOgSiTgmWbg==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-windows-x64-msvc/0.15.0:
+    resolution: {integrity: sha512-Z7Djg+/efPrg+L52yAkooiGtOS2q02YDqm9rDq35eMRpJmqKQLL87b/YGgFVUUsiTOhc80xhn0ft2efM200C1w==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-darwin-arm64/0.9.2-next:
+    resolution: {integrity: sha512-7i/3sRwCsz5QzGarYpiggInciSO99mH2Qx3LZ8Mf+ia1jPWBaVtGiN+GimFZEcFnYhJ6EXMNYlAuX1nJyaRSVQ==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-darwin-x64/0.9.2-next:
+    resolution: {integrity: sha512-Sy0cgqW86PT0TuyAgNHpalRXrKM5WZPnDtHKVS2QXA5Ad01dhQxPHl5SiF12ussJztHWjWDmMKAso/Uopz8ENw==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-linux-arm64/0.9.2-next:
+    resolution: {integrity: sha512-WdhmT4sx1iGbjME8krEsYLmkgzJlNwv9yEjwIyhpAe87QngYF4w7KwdZeCAp28jkI8cp5vGYjTAHtbARRMUAcQ==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-linux-x64/0.9.2-next:
+    resolution: {integrity: sha512-Pgq0srYfXqgZ/Zlv2a3BzHhh+dewddWRrSWqqhjxcLLEm5IPVqfVmq0fUbNMZYm9M7DOJbUmcMdU6lPFdV044w==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-win32-arm64/0.9.2-next:
+    resolution: {integrity: sha512-6+5R/IzJKxIXMefjQ03/5D+fKBSsynV9LvF3Ovtr0vsSfA3SdjRfsOlkH/bPOrWcLT96Fkdq8ATWd5Ah2NBQ6A==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-win32-x64/0.9.2-next:
+    resolution: {integrity: sha512-cFg4mGdkWcVajk+mKWjt5g/RBaxvCrJ8qBseLSIWEh8jHfpSTbOFc5Z/Mkv7QY1WWOEUBr0bX71iqZqfh3jfOA==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/wasm-bundler/0.9.2-next:
+    resolution: {integrity: sha512-sa2rpam4spyijJMGfqrxttN8QX67OyZjAb+JyFB5FGfNvd075nFdTBSuM177tgbbSwmt3n2MY23EV1aCLiGTmg==}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/wasm-nodejs/0.9.2-next:
+    resolution: {integrity: sha512-yUTxjYZfrqXQrszRUVK/lUfRJOD5g9wfZXeRBJ4FJllGCy1CvwwR9bS09oSLIZd8zMCC02XMBBW+OZJ1b6rZrA==}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/wasm-web/0.9.2-next:
+    resolution: {integrity: sha512-iZpgD4n5f2tMeSwlF50k/d8RGBkdoi7wX9YtYTXFks7mN3Z5OU7IHC1LvY28yAv0EELwMFYaaZIvhIs0jozzKw==}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /detect-libc/2.0.1:
+    resolution: {integrity: sha512-463v3ZeIrcWtdgIg6vI6XUncguvr2TnGl4SzDXinkt9mSLpBJKXT3mW6xT3VQdDN11+WVs29pgvivTc4Lp8v+w==}
+    engines: {node: '>=8'}
+    dev: true
+
+  /rome/0.9.2-next:
+    resolution: {integrity: sha512-ppc7Jg3oZfmVXvs28OynJBWa26dy8201QNH3vY8RlfdzxblLOb9+ovPgcmwceSURZMNz/HS+aTpuHW8T06ciHA==}
+    engines: {node: '>=14.*'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@rometools/cli-darwin-arm64': 0.9.2-next
+      '@rometools/cli-darwin-x64': 0.9.2-next
+      '@rometools/cli-linux-arm64': 0.9.2-next
+      '@rometools/cli-linux-x64': 0.9.2-next
+      '@rometools/cli-win32-arm64': 0.9.2-next
+      '@rometools/cli-win32-x64': 0.9.2-next
+      '@rometools/wasm-bundler': 0.9.2-next
+      '@rometools/wasm-nodejs': 0.9.2-next
+      '@rometools/wasm-web': 0.9.2-next
+    dev: true
+
+  /typescript/4.8.4:
+    resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true

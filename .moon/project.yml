@@ -1,0 +1,44 @@
+$schema: 'https://moonrepo.dev/schemas/global-project.json'
+
+fileGroups:
+  configs:
+    - '*.{js,ts,jsx,tsx,json}'
+
+  sources:
+    - 'src/**/*'
+    - 'types/**/*'
+
+  tests:
+    - 'tests/**/*.test.*'
+    - '**/__tests__/**/*'
+  
+  inputs:
+    - 'src/**/*'
+    - 'pages/**/*'
+    - 'tests/**/*'
+    - 'types/**/*'
+
+
+tasks:
+    fmt:
+        command: 'rome format --write .'
+        inputs:
+            - '@group(inputs)'
+
+    lint:
+        command: 'rome check .'
+        inputs:
+            - '@group(inputs)'
+
+    typecheck:
+        command: 'tsc --build'
+        inputs:
+            - '@group(inputs)'
+            - 'tsconfig.json'
+            - '/tsconfig.json'
+    build:
+        command: 'tsc'
+        inputs:
+            - '@group(inputs)'
+            - 'tsconfig.json'
+            - '/tsconfig.json'

@@ -1,0 +1,17 @@
+{
+  "name": "substore",
+  "version": "1.0.0",
+  "description": "Data store as a Service",
+  "scripts": {
+    "moon": "moon"
+  },
+  "devDependencies": {
+    "@moonrepo/cli": "^0.15.0",
+    "rome": "0.9.2-next",
+    "typescript": "4.8.4"
+  },
+  "engines": {
+    "node": "18.8.0"
+  },
+  "packageManager": "pnpm@7.12.2"
+}
