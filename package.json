@@ -2,6 +2,12 @@
   "name": "substore",
   "version": "1.0.0",
   "description": "Data store as a Service",
+  "keywords": [
+    "database",
+    "substore",
+    "database-as-a-service",
+    "dbaas"
+  ],
   "scripts": {
     "moon": "moon"
   },

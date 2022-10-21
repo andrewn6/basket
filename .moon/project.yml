@@ -1,44 +1,45 @@
-$schema: 'https://moonrepo.dev/schemas/global-project.json'
+$schema: "https://moonrepo.dev/schemas/global-project.json"
 
 fileGroups:
   configs:
-    - '*.{js,ts,jsx,tsx,json}'
+    - "*.{js,ts,jsx,tsx,json}"
 
   sources:
-    - 'src/**/*'
-    - 'types/**/*'
+    - "src/**/*"
+    - "types/**/*"
 
   tests:
-    - 'tests/**/*.test.*'
-    - '**/__tests__/**/*'
-  
-  inputs:
-    - 'src/**/*'
-    - 'pages/**/*'
-    - 'tests/**/*'
-    - 'types/**/*'
+    - "tests/**/*.test.*"
+    - "**/__tests__/**/*"
 
+  inputs:
+    - "src/**/*"
+    - "pages/**/*"
+    - "tests/**/*"
+    - "types/**/*"
 
 tasks:
-    fmt:
-        command: 'rome format --write .'
-        inputs:
-            - '@group(inputs)'
+  fmt:
+    command: "rome format --write ."
+    inputs:
+      - "@group(inputs)"
 
-    lint:
-        command: 'rome check .'
-        inputs:
-            - '@group(inputs)'
+  lint:
+    command: "rome check ."
+    inputs:
+      - "@group(inputs)"
 
-    typecheck:
-        command: 'tsc --build'
-        inputs:
-            - '@group(inputs)'
-            - 'tsconfig.json'
-            - '/tsconfig.json'
-    build:
-        command: 'tsc'
-        inputs:
-            - '@group(inputs)'
-            - 'tsconfig.json'
-            - '/tsconfig.json'
+  typecheck:
+    command: "tsc --build"
+    inputs:
+      - "@group(inputs)"
+      - "tsconfig.json"
+      - "/tsconfig.json"
+  build:
+    command: "tsc"
+    inputs:
+      - "@group(inputs)"
+      - "tsconfig.json"
+      - "/tsconfig.json"
+  start:
+    command: "node dist/src/index.js"
