@@ -17,7 +17,7 @@ const redisStore = connectRedis(session);
 app.use(
   session({
     name: "substore.id",
-    store: new redisStore({ client: redisClient as any}),
+    store: new redisStore({ client: redisClient as any }),
     genid: (_) => v4(),
     secret: SESSION_SECRECT,
     resave: false,

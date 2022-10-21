@@ -13,6 +13,9 @@
   "references": [
     {
       "path": "packages/backend"
+    },
+    {
+      "path": "packages/provisioner"
     }
   ]
 }

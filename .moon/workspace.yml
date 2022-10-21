@@ -1,14 +1,15 @@
-$schema: 'https://moonrepo.dev/schemas/workspace.json'
+$schema: "https://moonrepo.dev/schemas/workspace.json"
 
 projects:
-  frontend: 'apps/frontend'
-  backend: 'packages/backend'
+  frontend: "apps/frontend"
+  backend: "packages/backend"
+  provisioner: "packages/provisioner"
 
 node:
-  version: '18.8.0'
-  packageManager: 'pnpm'
+  version: "18.8.0"
+  packageManager: "pnpm"
   pnpm:
-    version: '7.12.2'
+    version: "7.12.2"
 
   addEnginesConstraint: true
   dedupeOnLockfileChange: true
@@ -17,11 +18,11 @@ node:
 
 typescript:
   createMissingConfig: true
-  projectConfigFileName: 'tsconfig.json'
-  rootConfigFileName: 'tsconfig.json'
-  rootOptionsConfigFileName: 'tsconfig.json'
+  projectConfigFileName: "tsconfig.json"
+  rootConfigFileName: "tsconfig.json"
+  rootOptionsConfigFileName: "tsconfig.json"
   syncProjectReferences: true
 
 vcs:
-  manager: 'git'
-  defaultBranch: 'main'
+  manager: "git"
+  defaultBranch: "main"
