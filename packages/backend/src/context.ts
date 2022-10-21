@@ -1,8 +1,8 @@
-import { prisma } from "./db";
 import { PrismaClient } from "@prisma/client";
 import { Request } from "express";
+import { prisma } from "./db";
 
-export const getContext = (req: Request): IContext => {
+export const getContext = (req: Request): Context => {
   return {
     user: req.user,
     req: req,
@@ -10,8 +10,8 @@ export const getContext = (req: Request): IContext => {
   };
 };
 
-export interface IContext {
-  user: Express.User | undefined;
+export interface Context {
+  user?: Express.User;
   req: Request;
   db: PrismaClient;
 }

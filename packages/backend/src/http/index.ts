@@ -1,13 +1,12 @@
+import connectRedis from "connect-redis";
 import express from "express";
 import session from "express-session";
-import { v4 } from "uuid";
-import passport from "passport";
-import { gqlServer } from "../graphql";
-import { SESSION_SECRECT, PORT } from "../constant";
-import { authRouter } from "./auth";
 import Redis from "ioredis";
-import connectRedis from "connect-redis";
-import { REDIS_URL } from "../constant";
+import passport from "passport";
+import { v4 } from "uuid";
+import { PORT, REDIS_URL, SESSION_SECRECT } from "../constant";
+import { gqlServer } from "../graphql";
+import { authRouter } from "./auth";
 
 const app = express();
 

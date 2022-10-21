@@ -1,7 +1,7 @@
 import { ApolloServer } from "apollo-server-express";
-import * as User from "./schema/User";
 import { makeSchema } from "nexus";
-import { getContext, IContext } from "../context";
+import { Context, getContext } from "../context";
+import * as User from "./schema/User";
 
 export const schema = makeSchema({
   types: [User],
@@ -9,7 +9,7 @@ export const schema = makeSchema({
 
 export const gqlServer = new ApolloServer({
   schema,
-  context: ({ req }): IContext => {
+  context: ({ req }): Context => {
     return getContext(req);
   },
 });
