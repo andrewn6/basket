@@ -15,7 +15,7 @@ export const user = objectType({
 
 export const getUserQuery = queryField("getUser", {
   type: "User",
-  resolve: (_, __, ctx: IContext) => ctx.req.user,
+  resolve: (_, __, ctx: IContext) => ctx.user,
 });
 
 export const logoutMutation = mutationField("logout", {
