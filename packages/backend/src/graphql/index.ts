@@ -1,5 +1,5 @@
 import { ApolloServer } from "apollo-server-express";
-import * as User from "./User";
+import * as User from "./schema/User";
 import { makeSchema } from "nexus";
 import { getContext, IContext } from "../context";
 

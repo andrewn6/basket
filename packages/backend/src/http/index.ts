@@ -5,12 +5,19 @@ import passport from "passport";
 import { gqlServer } from "../graphql";
 import { SESSION_SECRECT, PORT } from "../constant";
 import { authRouter } from "./auth";
+import Redis from "ioredis";
+import connectRedis from "connect-redis";
+import { REDIS_URL } from "../constant";
 
 const app = express();
-// store session in redis
+
+const redisClient = new Redis(REDIS_URL);
+const redisStore = connectRedis(session);
+
 app.use(
   session({
     name: "substore.id",
+    store: new redisStore({ client: redisClient as any}),
     genid: (_) => v4(),
     secret: SESSION_SECRECT,
     resave: false,

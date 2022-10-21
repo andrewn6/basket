@@ -1,6 +1,6 @@
 import { mutationField, queryField, objectType } from "nexus";
 import { User } from "nexus-prisma";
-import { IContext } from "../context";
+import { IContext } from "../../context";
 
 export const user = objectType({
   name: User.$name,
@@ -13,7 +13,7 @@ export const user = objectType({
   },
 });
 
-export const currentUserQuery = queryField("getUser", {
+export const getUserQuery = queryField("getUser", {
   type: "User",
   resolve: (_, __, ctx: IContext) => ctx.req.user,
 });
