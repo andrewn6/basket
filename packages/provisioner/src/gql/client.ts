@@ -8,4 +8,4 @@ const graphQLClient = new GraphQLClient("https://api.fly.io/graphql", {
   },
 });
 
-export const sdk = getSdk(graphQLClient);
+export const client = getSdk(graphQLClient);

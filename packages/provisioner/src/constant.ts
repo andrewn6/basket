@@ -7,3 +7,5 @@ const envVar = (name: string): string => {
 };
 
 export const FLY_API_TOKEN = envVar("FLY_API_TOKEN");
+export const FLY_ORG_ID = envVar("FLY_ORG_ID");
+export const FLY_REGION = envVar("FLY_REGION");

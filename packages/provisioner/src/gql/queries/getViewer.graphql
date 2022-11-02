@@ -1,5 +1,0 @@
-query getViewer {
-  viewer {
-    username
-  }
-}
