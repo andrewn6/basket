@@ -15,6 +15,7 @@ authRouter.get(
 authRouter.get(
   "/auth/callback",
   passport.authenticate("github", {
+    // Replace them with frontend's url
     successRedirect: "http://a.localhost:4000/graphql",
     failureRedirect: "http://a.localhost:4000/l",
   }),

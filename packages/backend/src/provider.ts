@@ -4,7 +4,7 @@ export const providers = new Map([
   [
     "REDIS",
     {
-      image: "ghcr.io/substore/redis:7",
+      image: "registry.wyzl.io/basket/redis:7",
       password_var: "REDIS_PASSWORD",
       port: 6379,
       data: "/data",

@@ -1,7 +1,7 @@
 {
-  "name": "@substore/provisioner",
+  "name": "@basket/provisioner",
   "version": "0.0.1",
-  "description": "substore's provisioner",
+  "description": "basket.sh's provisioner",
   "author": "wyzlle",
   "license": "MPL-2.0",
   "main": "dist/index.js",

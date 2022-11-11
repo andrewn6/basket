@@ -1,10 +1,10 @@
 {
-  "name": "substore",
+  "name": "basketsh",
   "version": "1.0.0",
   "description": "Data store as a Service",
   "keywords": [
     "database",
-    "substore",
+    "basketsh",
     "database-as-a-service",
     "dbaas"
   ],

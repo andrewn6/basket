@@ -15,7 +15,7 @@ const redisStore = connectRedis(session);
 
 app.use(
   session({
-    name: "substore.id",
+    name: "basket.id",
     store: new redisStore({ client: redisClient as any }),
     genid: () => v4(),
     secret: SESSION_SECRECT,

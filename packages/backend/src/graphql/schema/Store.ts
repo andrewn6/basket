@@ -9,7 +9,7 @@ import {
 } from "nexus";
 import { Store, StoreType } from "nexus-prisma";
 import { Context } from "../../context";
-import { deprovision, provision } from "@substore/provisioner/";
+import { deprovision, provision } from "@basketsh/provisioner/";
 import { randomBytes } from "crypto";
 import { providers } from "../../provider";
 import { StoreType as PrismaStoreType } from "@prisma/client";
