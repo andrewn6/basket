@@ -1,7 +1,6 @@
 $schema: "https://moonrepo.dev/schemas/workspace.json"
 
 projects:
-  frontend: "apps/frontend"
   backend: "packages/backend"
   provisioner: "packages/provisioner"
 
