@@ -4,14 +4,15 @@
   "description": "substore's backend",
   "scripts": {
     "generate": "prisma generate",
-    "migrate:dev": "prisma migrate dev",
     "migrate:deploy": "prisma migrate deploy",
+    "migrate:dev": "prisma migrate dev",
     "migrate:status": "prisma migrate status"
   },
   "author": "wyzlle",
   "license": "MPL-2.0",
   "dependencies": {
     "@prisma/client": "^4.4.0",
+    "@substore/provisioner": "link:../provisioner",
     "apollo-server-express": "^3.10.2",
     "connect-redis": "^6.1.3",
     "dotenv": "^16.0.3",
