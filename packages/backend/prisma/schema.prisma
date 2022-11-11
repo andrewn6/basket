@@ -8,7 +8,7 @@ generator client {
 }
 
 generator nexusPrisma {
-   provider = "nexus-prisma"
+    provider = "nexus-prisma"
 }
 
 model User {
@@ -19,36 +19,23 @@ model User {
     stores    Store[]
     createdAt DateTime  @default(now())
     updatedAt DateTime  @updatedAt
-    deletedAt DateTime?
 }
 
 model Store {
     id              String    @id @default(uuid())
-    name            String
+    name            String    @unique
     type            StoreType
     url             String
     user            User      @relation(fields: [userId], references: [id])
     userId          String
-    backups         Backup[]
-    backupFrequency Int       @default(1440)
     createdAt       DateTime  @default(now())
     updatedAt       DateTime  @updatedAt
-    deletedAt       DateTime?
 }
 
+// Add store's config in src/provider.ts
 enum StoreType {
     REDIS
-    MONGODB
-    POSTGRESQL
+    MONGO
+    POSTGRES
     MYSQL
-}
-
-model Backup {
-    id        String    @id @default(uuid())
-    url       String    @unique
-    store     Store     @relation(fields: [storeId], references: [id])
-    storeId   String
-    createdAt DateTime  @default(now())
-    updatedAt DateTime  @updatedAt
-    deletedAt DateTime?
 }

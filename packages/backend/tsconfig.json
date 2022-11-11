@@ -3,7 +3,16 @@
   "compilerOptions": {
     "outDir": "dist"
   },
-  "exclude": ["node_modules", "dist"],
-  "include": ["src", "tests"],
-  "references": []
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "../provisioner"
+    }
+  ]
 }
