@@ -4,6 +4,8 @@
   "description": "substore's provisioner",
   "author": "wyzlle",
   "license": "MPL-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "dotenv": "^16.0.3",
     "graphql": "^16.6.0",
@@ -20,6 +22,7 @@
     "typescript": "4.8.4"
   },
   "scripts": {
-    "codegen": "graphql-codegen --config codegen.yml"
+    "codegen": "graphql-codegen --config codegen.yml",
+    "build": "pnpm run codegen && moon run provisioner:build"
   }
 }
