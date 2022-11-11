@@ -14,6 +14,7 @@ export const gqlServer = new ApolloServer({
     return getContext(req);
   },
   formatError: (error) => {
+    console.error(error)
     return new Error("minor inconvenience");
   },
 });

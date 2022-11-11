@@ -17,7 +17,7 @@ app.use(
   session({
     name: "substore.id",
     store: new redisStore({ client: redisClient as any }),
-    genid: (_) => v4(),
+    genid: () => v4(),
     secret: SESSION_SECRECT,
     resave: false,
     saveUninitialized: false,

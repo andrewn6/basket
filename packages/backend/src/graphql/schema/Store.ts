@@ -99,7 +99,7 @@ export const deleteStoreMutattion = mutationField("deleteStore", {
       });
       return true;
     } catch (error) {
-      console.log(error);
+      console.error(error);
       return false;
     }
   },
