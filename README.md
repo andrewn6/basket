@@ -4,7 +4,7 @@
     <img width="230" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/bbd3a271eaabccd429c696bd937c4a52b8b5136b/assets/Basket/3D/basket_3d.png" alt="basket emoji">
 </p>
 
-Basket is a database as a service powered by [Fly](https://fly.io). It currently supports [Redis](https://redis.io), [MongoDB](https://www.mongodb.com), [MySQL](https://www.mysql.com) and [PostgreSQL](https://www.postgresql.org). It is modular and can be extended to support other databases.
+Basket is a database as a service tool powered by [Fly](https://fly.io). It currently supports [Redis](https://redis.io), [MongoDB](https://www.mongodb.com), [MySQL](https://www.mysql.com) and [PostgreSQL](https://www.postgresql.org). It is modular and can be extended to support other databases.
 
 ## Adding a new database
 
